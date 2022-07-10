@@ -22,7 +22,6 @@ body {
     background-color: black;
     display: inline-block;    
 }
-
 .btn {
     border: 1px solid black;
     display: block; 
@@ -32,15 +31,13 @@ body {
 #pixel-board{
     /*border: 1px solid black;*/
    width: 226px;
+   height: 226px;
 }
 .pixel {       
     background-color: white;
     width: 40px;
     height: 40px;    
     border: 1px solid black;
-    display: flex;
-    flex-flow: row wrap; 
-    align-items: flex-start;
-    align-content: stretch;    
+    display: inline-block   
 }
 
