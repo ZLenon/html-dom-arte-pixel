@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;    
 }
 body {
     background-color: bisque;
@@ -13,6 +13,7 @@ body {
 #title {
     margin-top: 5%;
     font-family: monospace;
+    margin-top: 5%;
 }
 
 .color {
@@ -32,12 +33,13 @@ body {
     /*border: 1px solid black;*/
    width: 226px;
    height: 226px;
+   line-height: 0;
 }
 .pixel {       
     background-color: white;
     width: 40px;
     height: 40px;    
     border: 1px solid black;
-    display: inline-block   
+    display: inline-block;
 }
 
