@@ -1,15 +1,15 @@
 const colorPalet = document.getElementById('color-palette'); //chamei a ja existente div principal la do html com a CLASS REFERENTE para o JS aqui
 console.log(colorPalet.id); //so para mostrar no console log, lembrar do ponto e do ID
 
-localStorage.setItem('saveColor', 'black');
+localStorage.setItem('saveColor', 'black');// setei o iten no local storage com a key savecolor e a valor cor preta
 
-function selectColor(event) {
-  let guardaCores = document.getElementsByClassName('color');
-  for (let index = 0; index < guardaCores.length; index++) {
-    guardaCores[index].classList.remove('selected');
+function selectColor(event) { 
+  let saveColors = document.getElementsByClassName('color'); //chamei a class color com todas as cores e salva elas em uma variavel
+  for (let index = 0; index < saveColors.length; index++) { //percorre todas as cores
+    saveColors[index].classList.remove('selected'); // ao passar por todas as cores remove o atributo SELECT
   }
-  event.target.classList.add('selected');
-  console.log(event.target.style.backgroundColor);
+  event.target.classList.add('selected'); // Ao clicar add o atributo SELECT
+  console.log(event.target.style.backgroundColor);  //mostra no console se a atributo esta realmente sendo Addicionado 
   localStorage.setItem('saveColor', event.target.style.backgroundColor);
 }
 
